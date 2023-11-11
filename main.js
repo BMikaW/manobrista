@@ -12,20 +12,20 @@ greencar_y = 225;
 
 function add() {
 	background_imgTag = new Image();
-	background_imgTag.onload = uploadBackground;
-	background_imgTag.src = background_image;
+	background_imgTag.onload = upLoadBackground;
+	background_imgTag.src = backgroundImage;
 
 	greencar_imgTag = new Image();
-	greencar_imgTag.onload = uploadgreencar; 
-	greencar_imgTag.src = greencar_image;
+	greencar_imgTag.onload = upLoadgreencar; 
+	greencar_imgTag.src = greencarImage;
 }
 
 function uploadBackground() {
-	ctx.drawImage(greencar_imgTag, 0, 0, canvas.width, canvas.height);
+	ctx.drawImage(background_imgTag, 0, 0, canvas.width, canvas.height);
 
 }
 
-function uploadGreenCar() {
+function uploadgreenCar() {
 	ctx.drawImage(greencar_imgTag, greencar_x,greencar_y, greencar_width, greencar_height);
 	
 }
